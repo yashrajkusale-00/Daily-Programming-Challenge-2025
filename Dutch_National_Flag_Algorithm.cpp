@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void sortColors(vector<int>& arr) {
+void sort(vector<int>& arr) {
     int low = 0, mid = 0;
     int high = arr.size() - 1;
 
@@ -54,7 +54,7 @@ int main() {
             throw logic_error("Notice: The array is already sorted.");
         }
 
-        sortColors(nums);
+        sort(nums);
 
         cout << "Sorted array: ";
         for (int num : nums) {
